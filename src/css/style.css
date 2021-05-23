@@ -1,35 +1,129 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
 body {
-  text-align: center;
-  background: #6cf;
-  font-family: sans-serif;
+  display: flex;
+  min-height: 100vh;
+  /* text-align: center; */
+  justify-content: center;
+  align-items: center;
+
+  background: url(../img/party.jpg);
+  background-color: rgba(47, 48, 58, 0.8);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  backdrop-filter: blur(12px);
+
+  font-family: 'Oswald', sans-serif;
   font-weight: 100;
+}
+
+.timer-title {
+  font-size: 19px;
+  font-weight: 400;
+  text-transform: uppercase;
+  padding: 25px 0 10px 0;
+  font-stretch: 50%;
+  letter-spacing: 11.5px;
+}
+
+@media screen and (min-width: 768px) {
+  .timer-title {
+    font-size: 30px;
+  }
+}
+
+.title-descr {
+  font-size: 12px;
+  font-stretch: 50%;
+  letter-spacing: 1.5px;
+  margin-bottom: 70px;
+}
+@media screen and (min-width: 768px) {
+  .title-descr {
+    font-size: 20px;
+  }
 }
 
 .timer {
-  font-family: sans-serif;
-  color: rgb(0, 0, 0);
+  position: relative;
   display: inline-block;
-  font-weight: 100;
+  background-image: linear-gradient(
+      to right,
+      rgba(47, 48, 58, 0.2),
+      rgba(47, 48, 58, 0.2)
+    ),
+    url(../img/space.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  /* justify-content: center; */
+  /* align-items: center; */
+
+  color: #fff;
+  font-weight: 800;
   text-align: center;
-  font-size: 30px;
+  font-size: 22px;
+
+  padding: 40px 50px;
+  border-radius: 10px;
+}
+@media screen and (min-width: 768px) {
+  .timer {
+    font-weight: 800;
+    font-size: 50px;
+    padding: 40px 50px;
+  }
 }
 
 .field {
-  padding: 10px;
-  border-radius: 3px;
-  background: #90f;
   display: inline-block;
+  margin-bottom: 70px;
+}
+@media screen and (max-width: 768px) {
+  .field {
+    width: calc((100% - 20px) / 2);
+  }
 }
 
 .value {
-  padding: 15px;
-  border-radius: 3px;
-  background: #f3f3f3;
   display: inline-block;
 }
 
 .label {
-  display: block;
-  padding-top: 5px;
-  font-size: 16px;
+  font-size: 12px;
+}
+
+@media screen and (min-width: 768px) {
+  .label {
+    font-size: 16px;
+  }
+}
+
+.info {
+  font-size: 8px;
+  font-stretch: 50%;
+  letter-spacing: 2.5px;
+  text-transform: uppercase;
+  font-stretch: 50%;
+}
+
+@media screen and (min-width: 768px) {
+  .info {
+    font-size: 15px;
+    /* font-stretch: 50%;
+    letter-spacing: 2.5px;
+    text-transform: uppercase;
+    font-stretch: 50%; */
+  }
+}
+
+.info:nth-child(2n) {
+  margin-bottom: 25px;
 }
