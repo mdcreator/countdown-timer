@@ -71,7 +71,8 @@ body {
   text-align: center;
   font-size: 22px;
 
-  padding: 40px 50px;
+  padding: 20px 50px;
+  margin: 30px 10px;
   border-radius: 10px;
 }
 @media screen and (min-width: 768px) {
