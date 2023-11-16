@@ -45,13 +45,13 @@ class CountdownTimer {
     refs.hours.textContent = `${hours}`;
     refs.mins.textContent = `${mins}`;
     refs.secs.textContent = `${secs}`;
-    //   const elem = document.getElementById('#timer-1');
-    //   elem.innerHTML = days + ':' + hours + ':' + mins + ':' + secs;
-    //   setTimeout('#timer-1', 1000);
+    // const elem = document.getElementById('#timer-1');
+    // elem.innerHTML = days + ':' + hours + ':' + mins + ':' + secs;
+    // setTimeout('#timer-1', 1000);
   }
 }
 
 const countdownTimer = new CountdownTimer({
   selector: '#timer-1',
-  targetDate: new Date('Mar 7, 2023'),
+  targetDate: new Date('Mar 7, 2024'),
 });
